@@ -16,6 +16,6 @@ Hello world!
 `Inline code` with backticks
 ```
 # code block
-print '3 backticks or'
+print '3 backticks o'
 print '    '
 ```
