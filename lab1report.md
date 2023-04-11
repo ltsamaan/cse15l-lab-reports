@@ -9,6 +9,6 @@
 
 3. Now you are free to run some commands on the computer. Commands such as cd, ls, pwd, mkdir, and cp can be used to do a number of things such as change directories and see what files are located in one. cd changes the directory, ls lists the files, pwd prints the working directory, mkdir makes a directory, and there are a lot more commands that can be used in terminal. Here are some examples in the image below. 
 
-![Commands]()
+![Commands](commands.png)
 
 4. To log out of the remote server, type exit in terminal and then press enter or use Ctrl-D. 
