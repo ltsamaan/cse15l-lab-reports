@@ -1,1 +1,1 @@
-/add-message?s=Hello
+/add-message?s="Hello"
