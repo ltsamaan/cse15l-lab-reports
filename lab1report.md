@@ -42,26 +42,26 @@ This can be done through the link: [Course-specific Account for CSE15L](https://
 
 *There are a lot more commands that can be used in terminal. Here are some examples of these being used in the image below:*
 ---
-1. This simply uses cd to change the directory. 
+* This simply uses cd to change the directory. 
 
 ![Image](Q1.PNG)
 ---
-2. ls is listing out all of the files here. 
+* ls is listing out all of the files here. 
 
 ![Commands](Q2.PNG)
 ---
-3. ls is used again but with -a this time. 
+* ls is used again but with -a this time. 
 
 ![Commands](Q3.PNG)
 ---
-4. pwd gives us the working directory here. 
+* pwd gives us the working directory here. 
 
 ![Commands](Q4.PNG)
 ---
-5. I used the help command here so that I was given information on what the mkdir command did. 
+* I used the help command here so that I was given information on what the mkdir command did. 
 ![Commands](Q5.PNG)
 ---
-6. Finding hello.txt.
+* hello.txt
 
 ![Commands](Q6.PNG)
 
