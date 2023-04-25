@@ -60,6 +60,7 @@ This can be done through the link: [Course-specific Account for CSE15L](https://
 ---
 * I used the help command here so that I was given information on what the mkdir command did. 
 
+
 ![Commands](Q5.PNG)
 ---
 * hello.txt
