@@ -42,6 +42,18 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 ---
 
 ## Part 2
+***Failure-inducing input***
+  
+![Image](code3.PNG)
+  
+The output:
+![Image](code2.PNG)
+  
+***input that doesn’t induce a failure***
+  -
+The output: Passed test so no error in output. 
+  
+![Image](code1.PNG)
 
 
 ## Part 3
