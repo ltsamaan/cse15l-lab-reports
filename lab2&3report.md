@@ -47,12 +47,28 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 ![Image](code3.PNG)
   
 The output:
+  
 ![Image](code2.PNG)
   
 ***input that doesn’t induce a failure***
-  -
-The output: Passed test so no error in output. 
   
+![Image](code4.PNG)
+  
+The output: Passed test so no error in output. 
+
+---
+### BEFORE:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+ ```
+  
+### AFTER:
 ![Image](code1.PNG)
 
 
