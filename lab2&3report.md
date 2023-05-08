@@ -1,8 +1,34 @@
 ## Part 1
 
 ***My code for ```StringServer.java```:***
+```
+import java.io.IOException;
+import java.net.URI;
 
-![Image](stringserver.PNG)
+class Handler implements URLHandler {
+    String answer = "";
+    public String handleRequest(URI url) {
+            System.out.println("Path: " + url.getPath());
+            if (url.getPath().contains("/add")) {
+                String[] parameters = url.getQuery().split("=");
+                answer += "\n" + String.format(parameters[1]);
+            }
+            return answer;
+    }   
+}
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
 
 This is my code for ```StringServer.java```. This checks if the path contains "/add", and when it does, then query gets split into two and assigned to an empty array called parameters. I then told it to return the first index of parameters on a new line.
 
@@ -32,28 +58,36 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 2. The argument for handleRequest is URI url. The argument for main is an empty string called args. 
 
 *Values of relevant fields for Handler class:*
-* String answer = ""; (An empty string.)
-* String[] parameters = url.getQuery().split("="); (Index 0 would hold the string "-message?s", and index 1 would hold "How are you doing!")
+  *  String answer = ""; (An empty string.)
+  *  String[] parameters = url.getQuery().split("="); (Index 0 would hold the string "-message?s", and index 1 would hold "How are you doing!")
 
  *Values of relevant fields for StringServer class:*
- * int port = Integer.parseInt(args[0]); (2020)
+  * int port = Integer.parseInt(args[0]); (2020)
 3. String answer will no longer be empty after we run the code. It changes to hold "How are you doing!". String[] parameters changes as well because the first index will also hold the new "How are you doing!" string that we put in the URL. 
 
 ---
 
 ## Part 2
 ***Failure-inducing input***
-  
-![Image](code3.PNG)
-  
+```
+ @Test
+  public void testReversed3() {
+    int[] input1 = {1, 2, 3};
+    assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
+  }
+ ```
 The output:
   
 ![Image](code2.PNG)
   
 ***input that doesn’t induce a failure***
-  
-![Image](code4.PNG)
-  
+```
+@Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
 The output: Passed test so no error in output. 
 
 ---
@@ -69,9 +103,18 @@ static int[] reversed(int[] arr) {
  ```
   
 ### AFTER:
-![Image](code1.PNG)
-
-
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
+***How I fixed the code:***
+To fix the method reversed, I switched arr and newArray with each other so it would look like this: newArray[i] = arr[arr.length - i - 1]. Then instead of returning array, we return newArray since we changed the code to update it. The problem with the original code is that it tried to take values from newArray instead of arr to reverse. The values in arr are the ones we want to reverse and newArray is there for the purpose of storing the reversed values. 
+  
 ## Part 3
 
 Something new that I learned these past two labs was that we could create a whole page/webserver through terminal. We've only used terminal for tests so far in my classes so it was really interesting how it could create a web server as well. I also didn't think we could do math or show strings on the page just by modifying the URL. This was very cool!
