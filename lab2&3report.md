@@ -64,8 +64,9 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 - ```String answer = "";``` (An empty string.)
 - ```String[] parameters = url.getQuery().split("=");``` (Index 0 would hold the string "-message?s", and index 1 would hold "How are you doing!")
     
-    *Values of relevant fields for StringServer class:*
-    - ```int port = Integer.parseInt(args[0]);``` (2020)
+    
+*Values of relevant fields for StringServer class:*
+- ```int port = Integer.parseInt(args[0]);``` (2020)
     
     
 3. String answer will no longer be empty after we run the code. It changes to hold "How are you doing!". String[] parameters changes as well because the first index will also hold the new "How are you doing!" string that we put in the URL. 
