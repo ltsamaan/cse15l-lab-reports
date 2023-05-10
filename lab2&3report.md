@@ -60,6 +60,7 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
   
 1. The methods being called here are handleRequest and main. 
 2. The argument for handleRequest is URI url. The argument for main is an empty string called args. 
+    
     *Values of relevant fields for Handler class:*
 - ```String answer = "";``` (An empty string.)
 - ```String[] parameters = url.getQuery().split("=");``` (Index 0 would hold the string "-message?s", and index 1 would hold "How are you doing!")
