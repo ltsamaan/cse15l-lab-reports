@@ -1,3 +1,5 @@
+# Lab 2 & 3 Report:
+
 ## Part 1
 
 ***My code for ```StringServer.java```:***
