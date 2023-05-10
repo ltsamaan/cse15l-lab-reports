@@ -42,7 +42,9 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 2. The argument for handleRequest is URI url. The argument for main is an empty string called args. 
 
 ##### Values of relevant fields for Handler class:
+
 - ```String answer = "";``` (An empty string.)
+
 - ```String[] parameters = url.getQuery().split("=");``` (In this case, we'd get a list of length 2. Index 0 would hold the string "-message?s", and index 1 would hold the   <string> we chose which is "Hello".)
     
 ##### Values of relevant fields for StringServer class:
