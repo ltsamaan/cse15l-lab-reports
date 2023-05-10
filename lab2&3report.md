@@ -44,7 +44,7 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 2. The argument for handleRequest is URI url. The argument for main is an empty string called args.  
 3. String answer changes to hold what we wrote for <string> each time we change it. It will no longer be empty after we run the code. In this case it is "Hello". String[] parameters changes as well because the first index will also hold the new "Hello" string.
     
-<u>Question 2 continued...:</u>
+<u>Question 2 continued:</u>
 ##### Values of relevant fields for Handler class:
 
 - ```String answer = "";``` (An empty string.)
@@ -65,7 +65,7 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 2. The argument for handleRequest is URI url. The argument for main is an empty string called args. 
 3. String answer will no longer be empty after we run the code. It changes to hold "How are you doing!". String[] parameters changes as well because the first index will also hold the new "How are you doing!" string that we put in the URL. 
 
-<u>Question 2 continued...:</u>
+<u>Question 2 continued:</u>
 ##### Values of relevant fields for Handler class:
     
 -  ```String answer = "";``` (An empty string.)
