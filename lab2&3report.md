@@ -55,7 +55,7 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 - ```int port = Integer.parseInt(args[0]);``` (The port number I chose which was 2020, as shown in the URL.)
     
 
----
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ***Using ```/add-message?s=How are you doing!```:***
 
