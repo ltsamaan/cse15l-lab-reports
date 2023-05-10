@@ -41,16 +41,16 @@ This is my code for ```StringServer.java```. This checks if the path contains "/
 1. The methods being called here are handleRequest and main. 
 2. The argument for handleRequest is URI url. The argument for main is an empty string called args. 
 
-*Values of relevant fields for Handler class:*
-- String answer = ""; (An empty string.)
-- String[] parameters = url.getQuery().split("="); (In this case, we'd get a list of length 2. Index 0 would hold the string "-message?s", and index 1 would hold the   <string> we chose which is "Hello".)
+    *Values of relevant fields for Handler class:*
+    - String answer = ""; (An empty string.)
+    - String[] parameters = url.getQuery().split("="); (In this case, we'd get a list of length 2. Index 0 would hold the string "-message?s", and index 1 would hold the   <string> we chose which is "Hello".)
 
- *Values of relevant fields for StringServer class:*
- - int port = Integer.parseInt(args[0]); (The port number I chose which was 2020, as shown in the URL.)
+    *Values of relevant fields for StringServer class:*
+    - int port = Integer.parseInt(args[0]); (The port number I chose which was 2020, as shown in the URL.)
     
     
-    
-    3. String answer changes to hold what we wrote for <string> each time we change it. It will no longer be empty after we run the code. In this case it is "Hello". String[] parameters changes as well because the first index will also hold the new "Hello" string. 
+3. String answer changes to hold what we wrote for <string> each time we change it. It will no longer be empty after we run the code. In this case it is "Hello". String[] parameters changes as well because the first index will also hold the new "Hello" string. 
+
 ---
 
 ***Using ```/add-message?s=How are you doing!```:***
