@@ -93,7 +93,7 @@ Then in vim:
 ```
         
         
-Image[](vim.PNG);
+![image](vim.PNG)
 
 8.
 ```
