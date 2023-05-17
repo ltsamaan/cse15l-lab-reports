@@ -91,6 +91,8 @@ Then in vim:
   }
 <j>42 <l>12 <2> <backspace> <esc> :wq
 ```
+        
+        
 Image[](vim.PNG);
 
 8.
