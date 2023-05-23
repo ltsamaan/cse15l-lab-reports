@@ -11,7 +11,9 @@ To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wi
 
 *ChatGPT Prompt:* grep -i
 
-*ChatGPT Output:* ![image](i.PNG)
+*ChatGPT Output:* I changed the pattern to the string I wanted to find(in uppercase and lowercase), and changed file to the file containing this string. 
+
+![image](i.PNG)
 
 ##### **Example 1**
 ```
@@ -39,7 +41,9 @@ To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wi
 
 *ChatGPT Prompt:* grep -n
 
-*ChatGPT Output:* ![image](n.PNG)
+*ChatGPT Output:* I did as it said and followed grep -n by a pattern and a file for each example. The pattern is the string I chose in that file. 
+
+![image](n.PNG)
 
 ##### **Example 1**
 ```
@@ -69,7 +73,9 @@ To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wi
 
 *ChatGPT Prompt:* what does grep -e do
 
-*ChatGPT Output:* ![image](ee.PNG)
+*ChatGPT Output:* I plugged in multiple patterns(or one) like it showed and added the file that these strings could be found in. 
+
+![image](ee.PNG)
 
 ##### **Example 1**
 ```
@@ -97,7 +103,9 @@ To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wi
 
 *ChatGPT Prompt:* grep -h
 
-*ChatGPT Output:* ![image](h.PNG)
+*ChatGPT Output:* I wrote more than one file name like it showed after a patter so it could look for them in each file. 
+
+![image](h.PNG)
 
 ##### **Example 1**
 ```
