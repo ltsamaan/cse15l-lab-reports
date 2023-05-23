@@ -1,6 +1,6 @@
 # Lab Report 4
 
-**Step 4:**
+**Step 4:** Logging into ieng6. 
 ```
 PS C:\Users\ltsamaan> ssh cs15lsp23bg@ieng6.ucsd.edu
 Password: 
@@ -17,7 +17,7 @@ ieng6-202   16:20:01   26  20.71,  21.33,  15.43
 ieng6-203   16:20:01   37  12.87,  14.80,  16.31
 ```
 ---
-**Step 5:**
+**Step 5:** Cloning fork of repository. 
 ```
 [cs15lsp23bg@ieng6-201]:~:504$ git clone https://github.com/ucsd-cse15l-s23/lab7
 Cloning into 'lab7'...
@@ -32,7 +32,7 @@ Desktop    Downloads  Pictures  Templates  docsearch  perl5         tutor
 Documents  Music      Public    Videos     lab7       stringsearch  wavelet
 ```
 ---
-**Step 6:**
+**Step 6:** Run failing tests. 
 ```
 [cs15lsp23bg@ieng6-201]:~:506$ cd lab7
 [cs15lsp23bg@ieng6-201]:lab7:507$ ls
@@ -67,7 +67,7 @@ FAILURES!!!
 Tests run: 2,  Failures: 1
 ```
 ---
-**Step 7:**
+**Step 7:** Fix code to make tests pass. 
 
 *Corrected code in vim:*
 ```
@@ -102,7 +102,7 @@ Tests run: 2,  Failures: 1
 * To change index1 to index2, I pressed <j> 42 times to get to the line with index1, <i> to change to insert mode, <l> 12 times to move right towards index1, <2> to type in 2, <backspace> to delete 1, (esc) to exit insert mode, and <:> <w> <q> to save and exit vim.      
 
 ---
-**Step 8:**
+**Step 8:** Show that the tests passed. 
         
 I used arrow keys to access javac and java again to run the tests. They passed the tests!
 ```
@@ -115,7 +115,7 @@ Time: 0.021
 OK (2 tests)
 ```
 ---
-**Step 9:**
+**Step 9:** Commit and push changes to Github account. 
         
 ```
 [cs15lsp23bg@ieng6-201]:lab7:514$ git commit -m "commit!"
