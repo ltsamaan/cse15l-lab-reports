@@ -1,4 +1,6 @@
-4.
+# Lab Report 4
+
+**Step 4:**
 ```
 PS C:\Users\ltsamaan> ssh cs15lsp23bg@ieng6.ucsd.edu
 Password: 
@@ -14,7 +16,8 @@ ieng6-201   16:20:01   25  2.33,   2.66,   2.86
 ieng6-202   16:20:01   26  20.71,  21.33,  15.43
 ieng6-203   16:20:01   37  12.87,  14.80,  16.31
 ```
-5.
+---
+**Step 5:**
 ```
 [cs15lsp23bg@ieng6-201]:~:504$ git clone https://github.com/ucsd-cse15l-s23/lab7
 Cloning into 'lab7'...
@@ -28,15 +31,20 @@ Resolving deltas: 100% (14/14), done.
 Desktop    Downloads  Pictures  Templates  docsearch  perl5         tutor  
 Documents  Music      Public    Videos     lab7       stringsearch  wavelet
 ```
-6.
+---
+**Step 6:**
 ```
 [cs15lsp23bg@ieng6-201]:~:506$ cd lab7
 [cs15lsp23bg@ieng6-201]:lab7:507$ ls
 ListExamples.java  ListExamplesTests.java  lib  test.sh
 [cs15lsp23bg@ieng6-201]:lab7:508$ vim test.sh
 ```
-Copy Paste javac and java then <esc> <:q!>
-Failure:
+
+* After opening vim to find the javac and java commands, I copied them so I could paste them into terminal. To exit vim after copying, I pressed (esc) <:> < q> <!> to quit without saving changes. 
+* 
+![image](vim.PNG)
+        
+*Failure:*
 ```
 [cs15lsp23bg@ieng6-201]:lab7:510$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 [cs15lsp23bg@ieng6-201]:lab7:511$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
@@ -58,10 +66,11 @@ org.junit.runners.model.TestTimedOutException: test timed out after 500 millisec
 FAILURES!!!
 Tests run: 2,  Failures: 1
 ```
-7.
+---
+**Step 7:**
+
+*Corrected code in vim:*
 ```
-Then in vim:
-  
 [cs15lsp23bg@ieng6-201]:lab7:513$ vim ListExamples.java
   
   // Takes two sorted list of strings (so "a" appears before "b" and so on),
@@ -89,13 +98,13 @@ Then in vim:
     }
     return result;
   }
-<j>42 <l>12 <2> <backspace> <esc> :wq
 ```
-        
-        
-![image](vim.PNG)
+* To change index1 to index2, I pressed <j> 42 times to get to the line with index1, <i> to change to insert mode, <l> 12 times to move right towards index1, <2> to type in 2, <backspace> to delete 1, (esc) to exit insert mode, and <:> <w> <q> to save and exit vim.      
 
-8.
+---
+**Step 8:**
+        
+I used arrow keys to access javac and java again to run the tests. They passed the tests!
 ```
 [cs15lsp23bg@ieng6-201]:lab7:514$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 [cs15lsp23bg@ieng6-201]:lab7:515$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
@@ -105,10 +114,11 @@ Time: 0.021
 
 OK (2 tests)
 ```
-Image[]();
-
-9.
+---
+**Step 9:**
+        
+```
+[cs15lsp23bg@ieng6-201]:lab7:514$ git commit -m "commit!"
+[cs15lsp23bg@ieng6-201]:lab7:514$ git push origin main
 ```
 
-```
-Image[]();
