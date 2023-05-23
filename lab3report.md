@@ -8,6 +8,8 @@ The command I chose is ```grep```.
 1. ```grep -i``` : Searches for pattern while ignoring uppercase and lowercase. 
 
 To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wikibooks.org/wiki/Grep)
+*ChatGPT Prompt:* grep -i
+*ChatGPT Output:* ![image](i.PNG)
 
 ##### **Example 1**
 ```
@@ -32,6 +34,8 @@ This searches for the string which is the name of a country location which shoul
 2. ```grep -n``` : Searches for and displays matching lines with line numbers. 
 
 To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wikibooks.org/wiki/Grep)
+*ChatGPT Prompt:* grep -n
+*ChatGPT Output:* ![image](n.PNG)
 
 ##### **Example 1**
 ```
@@ -58,6 +62,8 @@ This searches for the string "temperature" in the rr73.txt file and prints the l
 3. ```grep -e``` : Specifies one/multiple search patterns. 
 
 To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wikibooks.org/wiki/Grep)
+*ChatGPT Prompt:* what does grep -e do
+*ChatGPT Output:* ![image](ee.PNG)
 
 ##### **Example 1**
 ```
@@ -82,6 +88,8 @@ This finds multiple patters which are "Intro" and "Three-dimensional" in rr73.tx
 4. ```grep -h``` : Searches for pattern within multiple files. 
 
 To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wikibooks.org/wiki/Grep)
+*ChatGPT Prompt:* grep -h
+*ChatGPT Output:* ![image](h.PNG)
 
 ##### **Example 1**
 ```
