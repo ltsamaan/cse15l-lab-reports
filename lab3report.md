@@ -103,7 +103,7 @@ To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wi
 
 *ChatGPT Prompt:* grep -h
 
-*ChatGPT Output:* I wrote more than one file name like it showed after a patter so it could look for them in each file. 
+*ChatGPT Output:* I wrote more than one file name like it showed after a pattern so it could look for them in each file. 
 
 ![image](h.PNG)
 
