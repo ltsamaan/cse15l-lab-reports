@@ -10,6 +10,7 @@ The command I chose is ```grep```.
 To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wikibooks.org/wiki/Grep)
 
 *ChatGPT Prompt:* grep -i
+
 *ChatGPT Output:* ![image](i.PNG)
 
 ##### **Example 1**
@@ -37,6 +38,7 @@ This searches for the string which is the name of a country location which shoul
 To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wikibooks.org/wiki/Grep)
 
 *ChatGPT Prompt:* grep -n
+
 *ChatGPT Output:* ![image](n.PNG)
 
 ##### **Example 1**
@@ -66,6 +68,7 @@ This searches for the string "temperature" in the rr73.txt file and prints the l
 To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wikibooks.org/wiki/Grep)
 
 *ChatGPT Prompt:* what does grep -e do
+
 *ChatGPT Output:* ![image](ee.PNG)
 
 ##### **Example 1**
@@ -93,6 +96,7 @@ This finds multiple patters which are "Intro" and "Three-dimensional" in rr73.tx
 To find this command, I used ChatGPT and [this link to wikibooks.](https://en.wikibooks.org/wiki/Grep)
 
 *ChatGPT Prompt:* grep -h
+
 *ChatGPT Output:* ![image](h.PNG)
 
 ##### **Example 1**
