@@ -1,14 +1,14 @@
 # Part 1 – Debugging Scenario
 
-### Original Student Post :
+## Original Student Post :
 
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
 
-Terminal on VS Code in my MacBook
+Terminal on VS Code Windows PC
 
 **Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.**
 
-I cannot compile or run NumberServer.java inside the server.
+I'm having trouble compiling and running ArrayTests. 
 
 ![image](lab5rep.PNG)
 
