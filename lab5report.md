@@ -10,7 +10,7 @@ Terminal on VS Code in my MacBook
 
 I cannot compile or run NumberServer.java inside the server.
 
-![image]()
+![image](lab5rep.PNG)
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
 
