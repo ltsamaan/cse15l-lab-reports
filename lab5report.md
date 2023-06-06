@@ -118,6 +118,26 @@ Caused by: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore
 grade.sh: line 49: syntax error: unexpected end of file
 ```
 
+I then deleted a huge chunk of code randomly and it looked like this:
+
+![image](grade2.PNG)
+
+The output was:
+
+```
+anadeena@DESKTOP-J6VTTQV MINGW64 ~/Desktop/CSE8B/list-examples-grader-main
+$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-examples-grader.git
+Finished cloning
+ListExamples.java found
+cp: target 'script.' is not a directory
+JUnit output was:
+
+--------------
+| Score: /4 |
+--------------
+```
+This is a unique output from what I've seen before because it's trying to find script. which is not a directory. Also it still somehow managed to clone it even though I commented out the git clone command.
+
 # Part 2 - Reflection
 
 In the second half of the quarter, I learned about bash scripts which I've never heard of before. i think its very convenient that we can add many comands on a script and run them all at once. It can make things like
