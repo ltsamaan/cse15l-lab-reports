@@ -28,7 +28,15 @@ The correct commands were used to compile and run the JUnit tests. First ```java
 
 ## Bash Script : 
 
+I made changes to this bash script to create many errors:
+
+
+![image](grade.PNG)
+
+The changes I made are commenting out lines 3 and 4 to prevent it from removing student-submission and cloning the first command line argument. I changed ListExamples.java to TestListExamples.java. Then I changed the output redirection sign to flip the other way. The last thing I did was remove "fi" at the end of the last if statement which is required to close it. 
+
 When I changed these in the bash script, it resulted in this very long error:
+
 ```
 anadeena@DESKTOP-J6VTTQV MINGW64 ~/Desktop/CSE8B/list-examples-grader-main
 $ bash grade.sh https://github.com/ucsd-cse15l-f22/list-examples-grader.git
