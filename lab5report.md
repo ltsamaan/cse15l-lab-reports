@@ -20,6 +20,96 @@ I wanted to run this class with JUnit but it is resulting in this class not foun
 
 I recommend you look back at the commands we use to compile and run with JUnit. There should be two separate commands. You seem to have used the command ```java``` instead of ```javac``` to compile your code.
 
+## Result of feedback : 
+
+![image](fixedCompile.PNG)
+
+The correct commands were used to compile and run the JUnit tests. First ```javac``` was used to compile the code, and then ```java``` is used to run the tests. Not compiling first results in it not being able to find the class required to run the tests. 
+
+## Bash Script : 
+
+When I changed these in the bash script, it resulted in this very long error:
+```
+anadeena@DESKTOP-J6VTTQV MINGW64 ~/Desktop/CSE8B/list-examples-grader-main
+$ bash grade.sh https://github.com/ucsd-cse15l-f22/list-examples-grader.git
+Finished cloning
+ListExamples.java found
+TestListExamples.java:1: error: package org.junit does not exist
+import static org.junit.Assert.*;
+                       ^
+TestListExamples.java:6: error: cannot find symbol
+class IsMoon implements StringChecker {
+                        ^
+  symbol: class StringChecker
+TestListExamples.java:2: error: package org.junit does not exist
+import org.junit.*;
+^
+TestListExamples.java:13: error: cannot find symbol
+  @Test(timeout = 500)
+   ^
+  symbol:   class Test
+  location: class TestListExamples
+TestListExamples.java:22: error: cannot find symbol
+  @Test(timeout = 500)
+   ^
+  symbol:   class Test
+  location: class TestListExamples
+TestListExamples.java:31: error: cannot find symbol
+  @Test(timeout = 500)
+   ^
+  symbol:   class Test
+  location: class TestListExamples
+TestListExamples.java:39: error: cannot find symbol
+  @Test(timeout = 500)
+   ^
+  symbol:   class Test
+  location: class TestListExamples
+TestListExamples.java:17: error: cannot find symbol
+    List<String> merged = ListExamples.merge(left, right);
+                          ^
+  symbol:   variable ListExamples
+  location: class TestListExamples
+TestListExamples.java:19: error: cannot find symbol
+    assertEquals(expected, merged);
+    ^
+  symbol:   method assertEquals(List<String>,List<String>)
+  location: class TestListExamples
+TestListExamples.java:26: error: cannot find symbol
+    List<String> merged = ListExamples.merge(left, right);
+                          ^
+  symbol:   variable ListExamples
+  location: class TestListExamples
+TestListExamples.java:28: error: cannot find symbol
+    assertEquals(expected, merged);
+    ^
+  symbol:   method assertEquals(List<String>,List<String>)
+  location: class TestListExamples
+TestListExamples.java:35: error: cannot find symbol
+    List<String> filtered = ListExamples.filter(input, new IsMoon());
+                            ^
+  symbol:   variable ListExamples
+  location: class TestListExamples
+TestListExamples.java:36: error: cannot find symbol
+    assertEquals(expect, filtered);
+    ^
+  symbol:   method assertEquals(List<String>,List<String>)
+  location: class TestListExamples
+TestListExamples.java:43: error: cannot find symbol
+    List<String> filtered = ListExamples.filter(input, new IsMoon());
+                            ^
+  symbol:   variable ListExamples
+  location: class TestListExamples
+TestListExamples.java:44: error: cannot find symbol
+    assertEquals(expect, filtered);
+    ^
+  symbol:   method assertEquals(List<String>,List<String>)
+  location: class TestListExamples
+15 errors
+Error: Could not find or load main class org.junit.runner.JUnitCore
+Caused by: java.lang.ClassNotFoundException: org.junit.runner.JUnitCore
+grade.sh: line 49: syntax error: unexpected end of file
+```
+
 # Part 2 - Reflection
 
 In the second half of the quarter, I learned about bash scripts which I've never heard of before. i think its very convenient that we can add many comands on a script and run them all at once. It can make things like
