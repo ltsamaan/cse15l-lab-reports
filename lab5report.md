@@ -10,13 +10,15 @@ Terminal on VS Code Windows PC
 
 I'm having trouble compiling and running ArrayTests. 
 
-![image](lab5rep.PNG)
+![image](compile.PNG)
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
 
-I did not change the given code at all. I think there might be a problem with my working directory...?
+I wanted to run this class with JUnit but it is resulting in this class not found exception. The image above shows the command I wrote to compile and run the tests. 
 
+## TA Response :
 
+I recommend you look back at the commands we use to compile and run with JUnit. There should be two separate commands. You seem to have used the command ```java``` instead of ```javac``` to compile your code.
 
 # Part 2 - Reflection
 
