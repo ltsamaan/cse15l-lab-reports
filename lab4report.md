@@ -91,7 +91,10 @@ Tests run: 2,  Failures: 1
 
 *Corrected code in vim:*
 ```
-[cs15lsp23bg@ieng6-201]:lab7:513$ vim ListExamples.java    <enter>
+[cs15lsp23bg@ieng6-201]:lab7:513$ vim ListExamples.java    
+```
+```<enter>```
+```
   
   // Takes two sorted list of strings (so "a" appears before "b" and so on),
   // and return a new list that has all the strings in both list in sorted order.
