@@ -1,7 +1,8 @@
 # Lab Report 4
 
 **Step 4:** Logging into ieng6. 
-I pressed ```<enter>``` after sshing and typing in my password. 
+
+KeyStrokes: I pressed ```<enter>``` after sshing and typing in my password. 
 ```
 PS C:\Users\ltsamaan> ssh cs15lsp23bg@ieng6.ucsd.edu
 Password: 
@@ -19,6 +20,7 @@ ieng6-203   16:20:01   37  12.87,  14.80,  16.31
 ```
 ---
 **Step 5:** Cloning fork of repository. 
+KeyStrokes: I pressed ```<enter>``` after cloning to clone lab7. 
 ```
 [cs15lsp23bg@ieng6-201]:~:504$ git clone https://github.com/ucsd-cse15l-s23/lab7
 Cloning into 'lab7'...
@@ -34,6 +36,7 @@ Documents  Music      Public    Videos     lab7       stringsearch  wavelet
 ```
 ---
 **Step 6:** Run failing tests. 
+KeyStrokes: I pressed ```<enter>``` after each of these commands to edit vim. 
 ```
 [cs15lsp23bg@ieng6-201]:~:506$ cd lab7
 [cs15lsp23bg@ieng6-201]:lab7:507$ ls
@@ -47,6 +50,7 @@ ListExamples.java  ListExamplesTests.java  lib  test.sh
         
 *Failure:*
 
+KeyStrokes: I pressed ```<enter>``` after the javac and java commands to compile and run. 
 ```
 [cs15lsp23bg@ieng6-201]:lab7:510$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 [cs15lsp23bg@ieng6-201]:lab7:511$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
@@ -72,6 +76,7 @@ Tests run: 2,  Failures: 1
 **Step 7:** Fix code to make tests pass. 
 
 *Corrected code in vim:*
+KeyStrokes: I pressed ```<enter>``` after typing in vim ListExamples.java. 
 ```
 [cs15lsp23bg@ieng6-201]:lab7:513$ vim ListExamples.java    .
   
@@ -107,6 +112,7 @@ Tests run: 2,  Failures: 1
 **Step 8:** Show that the tests passed. 
         
 I used arrow keys to access javac and java again to run the tests. They passed the tests!
+KeyStrokes: I pressed ```<enter>``` after the javac and java commands to compile and run. 
 ```
 [cs15lsp23bg@ieng6-201]:lab7:514$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 [cs15lsp23bg@ieng6-201]:lab7:515$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
@@ -118,6 +124,8 @@ OK (2 tests)
 ```
 ---
 **Step 9:** Commit and push changes to Github account. 
+
+KeyStrokes: I pressed ```<enter>``` after committing and pushing. 
         
 ```
 [cs15lsp23bg@ieng6-201]:lab7:514$ git commit -m "commit!"
