@@ -4,9 +4,6 @@
 I pressed ```<enter>``` after sshing and typing in my password. 
 ```
 PS C:\Users\ltsamaan> ssh cs15lsp23bg@ieng6.ucsd.edu
-```
-```<enter>```
-```
 Password: 
 Last login: Wed May 17 16:13:46 2023 from its-cseb260-25.ucsd.edu
 quota: Cannot resolve mountpoint path /home/linux/staff/.snapshot/hourly.2023-05-11_1601: Stale file handle
@@ -24,9 +21,6 @@ ieng6-203   16:20:01   37  12.87,  14.80,  16.31
 **Step 5:** Cloning fork of repository. 
 ```
 [cs15lsp23bg@ieng6-201]:~:504$ git clone https://github.com/ucsd-cse15l-s23/lab7
-```
-```<enter>```
-```
 Cloning into 'lab7'...
 remote: Enumerating objects: 41, done.
 remote: Counting objects: 100% (6/6), done.
@@ -42,32 +36,21 @@ Documents  Music      Public    Videos     lab7       stringsearch  wavelet
 **Step 6:** Run failing tests. 
 ```
 [cs15lsp23bg@ieng6-201]:~:506$ cd lab7
-```
-```<enter>```
-```
 [cs15lsp23bg@ieng6-201]:lab7:507$ ls
-```
-```<enter>```
 ListExamples.java  ListExamplesTests.java  lib  test.sh
-```
 [cs15lsp23bg@ieng6-201]:lab7:508$ vim test.sh 
 ```
-```<enter>```
+```<enter>``` after each of these commands. 
 
 * To open vim to find the javac and java commands, I did vim test.sh. Then I highlighted the text and pressed ```<Ctrl> <c>```. To exit vim after copying, I pressed ```<esc> <:> < q> <!>``` to quit without saving changes. I copied them so I could paste them into terminal using ```<Ctrl> <v>```.
 * 
 ![image](vim.PNG)
         
 *Failure:*
+
 ```
 [cs15lsp23bg@ieng6-201]:lab7:510$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-```
-```<enter>```
-```
 [cs15lsp23bg@ieng6-201]:lab7:511$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
-```
-```<enter>```
-```
 JUnit version 4.13.2
 ..E
 Time: 0.549
@@ -91,10 +74,7 @@ Tests run: 2,  Failures: 1
 
 *Corrected code in vim:*
 ```
-[cs15lsp23bg@ieng6-201]:lab7:513$ vim ListExamples.java    
-```
-```<enter>```
-```
+[cs15lsp23bg@ieng6-201]:lab7:513$ vim ListExamples.java    .
   
   // Takes two sorted list of strings (so "a" appears before "b" and so on),
   // and return a new list that has all the strings in both list in sorted order.
@@ -130,11 +110,7 @@ Tests run: 2,  Failures: 1
 I used arrow keys to access javac and java again to run the tests. They passed the tests!
 ```
 [cs15lsp23bg@ieng6-201]:lab7:514$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-```
-```<enter>```
-```
 [cs15lsp23bg@ieng6-201]:lab7:515$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
-```
 ```
 JUnit version 4.13.2
 ..
@@ -147,10 +123,6 @@ OK (2 tests)
         
 ```
 [cs15lsp23bg@ieng6-201]:lab7:514$ git commit -m "commit!"
-```
-```<enter>```
-```
 [cs15lsp23bg@ieng6-201]:lab7:514$ git push origin main
 ```
-```<enter>```
 
