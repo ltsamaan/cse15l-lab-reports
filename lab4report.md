@@ -40,7 +40,6 @@ Documents  Music      Public    Videos     lab7       stringsearch  wavelet
 ListExamples.java  ListExamplesTests.java  lib  test.sh
 [cs15lsp23bg@ieng6-201]:lab7:508$ vim test.sh 
 ```
-```<enter>``` after each of these commands. 
 
 * To open vim to find the javac and java commands, I did vim test.sh. Then I highlighted the text and pressed ```<Ctrl> <c>```. To exit vim after copying, I pressed ```<esc> <:> < q> <!>``` to quit without saving changes. I copied them so I could paste them into terminal using ```<Ctrl> <v>```.
 * 
@@ -111,7 +110,6 @@ I used arrow keys to access javac and java again to run the tests. They passed t
 ```
 [cs15lsp23bg@ieng6-201]:lab7:514$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 [cs15lsp23bg@ieng6-201]:lab7:515$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
-```
 JUnit version 4.13.2
 ..
 Time: 0.021 
