@@ -20,7 +20,11 @@ ieng6-203   16:20:01   37  12.87,  14.80,  16.31
 ```
 ---
 **Step 5:** Cloning fork of repository. 
+
+
 KeyStrokes: I pressed ```<enter>``` after cloning to clone lab7. 
+
+
 ```
 [cs15lsp23bg@ieng6-201]:~:504$ git clone https://github.com/ucsd-cse15l-s23/lab7
 Cloning into 'lab7'...
@@ -36,7 +40,11 @@ Documents  Music      Public    Videos     lab7       stringsearch  wavelet
 ```
 ---
 **Step 6:** Run failing tests. 
+
+
 KeyStrokes: I pressed ```<enter>``` after each of these commands to edit vim. 
+
+
 ```
 [cs15lsp23bg@ieng6-201]:~:506$ cd lab7
 [cs15lsp23bg@ieng6-201]:lab7:507$ ls
@@ -112,7 +120,11 @@ KeyStrokes: I pressed ```<enter>``` after typing in vim ListExamples.java.
 **Step 8:** Show that the tests passed. 
         
 I used arrow keys to access javac and java again to run the tests. They passed the tests!
+
+
 KeyStrokes: I pressed ```<enter>``` after the javac and java commands to compile and run. 
+
+
 ```
 [cs15lsp23bg@ieng6-201]:lab7:514$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 [cs15lsp23bg@ieng6-201]:lab7:515$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
